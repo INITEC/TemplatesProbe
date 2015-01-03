@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!--     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> -->
+    <meta charset="utf-8">
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?v=3.exp">
+    </script>
+    <script type="text/javascript">
+      var marcador;
+      var mapa;
+      function cargarMapa() {
+        var posicion = new google.maps.LatLng(-12.040223, -77.036771);
+        var mapaOpciones = {
+          center: posicion,
+          zoom: 20,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        mapa = new google.maps.Map(document.getElementById("map_canvas"),
+            mapaOpciones);
+
+        var iconoMarcador = "Iconos/Sensor_11.png";
+
+        marcador = new google.maps.Marker({
+        position: posicion,
+        map: mapa,
+        animation: google.maps.Animation.DROP,
+        icon: iconoMarcador,
+        title:"Hoola mama! Soy un marcador!"
+        });
+
+        google.maps.event.addListener(marcador, 'mouseover', cambiarAnimacion);
+        google.maps.event.addListener(marcador, 'mouseout', cambiarAnimacion);
+        google.maps.event.addListener(marcador, 'click', mostrarInfo);
+      }
+
+      function cambiarAnimacion() {
+        if(marcador.getAnimation()==null){
+          marcador.setAnimation(google.maps.Animation.BOUNCE);  
+        }else{
+          marcador.setAnimation(null);
+        }
+        
+      }
+
+      function mostrarInfo() {
+        var infowindow = new google.maps.InfoWindow({
+          content: "EMC N°1<br> WAPOSAT",
+        });
+
+        infowindow.open(mapa, marcador);
+      }
+
+      google.maps.event.addDomListener(window, 'load', cargarMapa);
+
+    </script>
+  </head>
+  <body>
+    <div id="map_canvas" style="width:100%; height:100%"></div>
+  </body>
+</html>
