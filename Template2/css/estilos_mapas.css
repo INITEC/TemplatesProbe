@@ -1,0 +1,28 @@
+html, body{
+	height: 100%;
+	margin: 0px;
+	padding: 0px
+}
+
+#map-canvas {
+	height: 100%;
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+	float:left;
+}
+
+#area-graficos, #myChart{
+	float:left;
+	height: 100%;
+	width:50%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.tab-content{
+	height:100%;
+	width:100%
+}
+
+
