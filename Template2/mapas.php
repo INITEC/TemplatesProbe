@@ -46,11 +46,52 @@
     <?php include("navigation.php"); ?>  
     
     
-    <!-- Body -->
-    <div>
-        <div id="map-canvas"></div>
+    <!-- GoogleMaps -->
+    <div id="map-canvas"></div>
+    
+    <!-- Container -->
+    
+    <div class="container-fluid" id="main">
+  <div class="row">
+    <div class="col-xs-4"><!--map-canvas will be postioned here--></div>
+  	<div class="col-xs-8" id="left">
+    
+      <h2>Bootstrap Google Maps Demo</h2>
+      
+      <!-- item list -->
+      <div class="panel panel-default">
+        <div class="panel-heading"><a href="">Item heading</a></div>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+        Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+        dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+        Aliquam in felis sit amet augue.</p>
+      
+      <hr>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading"><a href="">Item heading</a></div>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+        Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+        dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+        Aliquam in felis sit amet augue.</p>
+      
+      <hr>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading"><a href="">Item heading</a></div>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+        Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+        dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+        Aliquam in felis sit amet augue.</p>
+
     </div>
-     
+    
+    
+  </div>
+</div> 
     
     <!-- Footer -->
     <?php include("footer.php") ?>

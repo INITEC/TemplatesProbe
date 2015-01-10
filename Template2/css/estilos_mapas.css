@@ -5,11 +5,13 @@ html, body{
 }
 
 #map-canvas {
-	height: 100%;
-	width:100%;
-	margin: 0px;
-	padding: 0px;
-	float:left;
+	width:50%;
+    height:calc(100% - 0);
+    position:absolute;
+    left:0px;
+    top:50px;
+    bottom:0;
+    overflow:hidden;
 }
 
 #area-graficos, #myChart{

@@ -54,10 +54,10 @@ body{
 }
 
 #map-canvas {
-	width:33.3333%;
+	width:33.33333%;
     height:calc(100% - 0);
     position:absolute;
-    right:16px;
+    left:0px;
     top:50px;
     bottom:0;
     overflow:hidden;
