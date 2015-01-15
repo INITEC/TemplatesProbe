@@ -18,13 +18,26 @@ var map, marker;
       animation: google.maps.Animation.DROP
     });
     google.maps.event.addListener(marker, 'click', mostrarInfo);
-  }
-
-  function mostrarInfo() {
+      google.maps.event.addListener(marker, 'click', MostrarCuadroEMT);
+      
+        function mostrarInfo() {
     var infowindow = new google.maps.InfoWindow({
       content: "Estacion CITRAR",
     });
     infowindow.open(map, marker);
+    setTimeout(function () { infowindow.close(); }, 5000);
   }
+
+    function MostrarCuadroEMT () {
+        $( "#map-canvas" ).removeClass( "col-md-12" ).addClass( "col-md-6" );
+        $( "#container" ).removeClass( "col-md-12" ).addClass( "col-md-6" );
+        map.setCenter(marker.getPosition());
+        CargarCuadroGraficas ();
+        
+    }
+      
+  }
+
+  
 
 google.maps.event.addDomListener(window, 'load', initialize);

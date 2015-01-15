@@ -5,14 +5,11 @@ html, body{
 }
 
 #map-canvas {
-	width:50%;
-    height:calc(100% - 0);
-    position:absolute;
-    left:0px;
-    top:50px;
-    bottom:0;
-    overflow:hidden;
-}
+	height:85%;
+    right:0px;
+    top:0px;
+    bottom:50px;
+    }
 
 #area-graficos, #myChart{
 	float:left;
@@ -23,8 +20,7 @@ html, body{
 }
 
 .tab-content{
-	height:100%;
-	width:100%
+    height:100%;
 }
 
 
