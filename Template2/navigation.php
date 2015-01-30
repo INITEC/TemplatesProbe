@@ -18,7 +18,7 @@
                     <li class="dropdown">
                         <a href="#" class="droptown-toggle" data-toggle="dropdown">Estaciones de Prueba<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">E1-RioRimac</a></li>
+                            <li><a href="EstamosTrabajando.php">E1-RioRimac</a></li>
                             <li class="divider"></li>
                             <li><a href="mapas.php">E1-CITRAR_UNI</a></li>
                         </ul>
