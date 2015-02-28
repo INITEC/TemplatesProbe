@@ -32,7 +32,7 @@
 
 <body>
     
-    <!-- Navigation -->
+    <!-- Navegador -->
     <?php include("navigation.php"); ?>
 
     <!-- Cabecera -->
@@ -52,7 +52,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Informaci&oacute;n oportuna para una mejor toma de decisiones</h2>
-                    <p class="lead">Revisa nuestra plataforma de prueba <a  href="mapas.php">Estaci&oacute;n CITRAR-UNI</a>.</p>
+                    <p class="lead">Revisa nuestra plataforma de prueba <a  href="mapas.php">Estacion CITRAR-UNI</a>.</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -72,7 +72,7 @@
                         <div class="col-md-4 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-square fa-stack-2x"></i>
                                 <i class="fa fa-cogs fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
@@ -129,9 +129,7 @@
     
     <!-- Nuestros Premios -->
     <section id="Premios" class="bg-primary" >
-        <div class="text-vertical-center" >
-            <h1>Nuestro sistema autom&aacute;tico</h1>
-        </div>
+    
     </section>
     <!-- Fin de Nuestros Premios -->
     
@@ -171,7 +169,8 @@
     <!-- Pie de pagina -->
     <?php include("footer.php") ?>
     <!-- Fin Pie de pagina -->
-
+    
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 

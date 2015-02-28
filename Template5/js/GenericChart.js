@@ -44,7 +44,7 @@ function CargarData (MPoint, superior, inferior, tiempoAntes, Periodo) {
                             i;
 
                         for (i = -12*TimeBefore; i <= 0; i++) {
-                            var y = Math.random()*0.25+(-Math.cos((hora+(i*24/288))*pi/12)*0.75)+PuntoMedio;
+                            var y = Math.random()*1+(-Math.cos((hora+(i*24/288))*pi/12)*2)+PuntoMedio;
                             
                             y = (Math.floor(y*100))/100;
                             data.push(
@@ -124,7 +124,7 @@ function nuevo_dato (Linea, MPoint, Lim_sup, Lim_inf, frecuencia ,parametro){
             time = hour + ':' + min ,
             bucle = 1,
             pi = 3.14159,
-        y = Math.random()*0.25+(-Math.cos((hour)*pi/12)*0.75)+ MPoint;
+        y = Math.random()*0.75+(-Math.cos((hour)*pi/12)*5)+ MPoint;
         y = (Math.floor(y*100))/100;
     
     if (parametro == 1){

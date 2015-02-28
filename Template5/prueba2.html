@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>WAPOSAT</title>
+      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/mapas.js"></script>
+    
+    <script>
+        var Lim_sup = 14,
+            Lim_inf = 0;
+        var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+		var lineChartData = {
+			labels : ["19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10","19:10"],
+			datasets : [
+				{
+					label: "My First dataset",
+					fillColor : "rgba(220,220,0,0)",       //Fondo
+					strokeColor : "rgba(220,220,0,1)",     //Linea
+					pointColor : "rgba(220,220,0,1)",      //Punto
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(220,220,220,1)",
+					data : [7.4545, 7.1245, 7.15489, 7.3564, 7.698, 7.1254, 7.361,7.4545, 7.1245, 7.15489, 7.3564, 7.698, 7.1254, 7.361,7.4545, 7.1245, 7.15489, 7.3564, 7.698, 7.1254, 7.361,7.4545, 7.1245, 7.15489, 7.3564, 7.698, 7.1254, 7.361]
+				},
+                {
+                    label: "Limite Superior",
+                    fillColor: "rgba(151,187,205,0)",
+                    strokeColor: "rgba(151,187,205,0)",
+                    pointColor: "rgba(151,187,205,0)",
+                    pointStrokeColor: "#fff",
+                    pointHighlightFill: "#fff",
+                    pointHighlightStroke: "rgba(151,187,205,1)",
+                    data: [Lim_sup, Lim_sup, Lim_sup, Lim_sup, Lim_sup, Lim_sup, Lim_sup,Lim_sup, Lim_sup, Lim_sup, Lim_sup, Lim_sup, Lim_sup, Lim_sup,Lim_sup, Lim_sup, Lim_sup, Lim_sup, Lim_sup, Lim_sup, Lim_sup,Lim_sup, Lim_sup, Lim_sup, Lim_sup, Lim_sup, Lim_sup, Lim_sup]
+                },
+                {
+                    label: "Limite Inferior",
+                    fillColor: "rgba(151,187,205,0)",
+                    strokeColor: "rgba(151,187,205,0)",
+                    pointColor: "rgba(151,187,205,0)",
+                    pointStrokeColor: "#fff",
+                    pointHighlightFill: "#fff",
+                    pointHighlightStroke: "rgba(151,187,205,1)",
+                    data: [Lim_inf, Lim_inf, Lim_inf, Lim_inf, Lim_inf, Lim_inf, Lim_inf,Lim_inf, Lim_inf, Lim_inf, Lim_inf, Lim_inf, Lim_inf, Lim_inf,Lim_inf, Lim_inf, Lim_inf, Lim_inf, Lim_inf, Lim_inf, Lim_inf,Lim_inf, Lim_inf, Lim_inf, Lim_inf, Lim_inf, Lim_inf, Lim_inf]
+                }
+			]
+
+		}
+        
+        
+        
+        function nuevo_dato (Linea){
+            
+                var a = new Date();
+                  var months = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+                  var month = months[a.getMonth()];
+                  var date = a.getDate();
+                  var hour = a.getHours();
+                  var min = a.getMinutes();
+                  var sec = a.getSeconds();
+                  var time = hour + ':' + min ;
+                
+            var hora1 = (new Date()).getHours(),
+                pi1 = 3.14159,
+                y = Math.random()*0.25+(-Math.cos((hora1)*pi1/12)*0.4)+7;
+                y = (Math.floor(y*100))/100;
+            var new_data1 = randomScalingFactor();
+            var new_data2 = "August";
+            Linea.addData([ y, Lim_sup, Lim_inf] ,time);
+            Linea.removeData();
+            setTimeout(function(){
+                nuevo_dato(Linea);
+            }, 5000);
+        }
+        
+        window.onload = function(){
+            var ctx = document.getElementById("myChart").getContext("2d");
+            var Milinea = new Chart(ctx).Line(lineChartData, {
+                animation: true,
+                responsive: true
+            });
+            nuevo_dato (Milinea);
+        }
+    </script>
+
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+    <section id="area-graficos">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist" id="myTab">
+        <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">PH</a></li>
+        <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">Temperatura</a></li>
+        <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">Salinidad</a></li>
+        <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">Nivel de metales</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade active" id="phGraph">...</div>
+        <div width="400" height="400">
+        <canvas id="myChart" ></canvas>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="temperaturaGraph">...</div>
+        <div role="tabpanel" class="tab-pane fade" id="salinidadGraph">...</div>
+        <div role="tabpanel" class="tab-pane fade" id="metalesGraph">...</div>
+      </div>
+    </section>
+
+    
+  </body>
+</html>

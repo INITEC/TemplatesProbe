@@ -35,7 +35,7 @@
     <!-- Navigation -->
     <?php include("navigation.php"); ?>
 
-    <!-- Cabecera -->
+    <!-- Header -->
     <header id="top" class="header page-header">
         <div class="text-vertical-center">
             <h1>WAPOSAT</h1>
@@ -44,24 +44,22 @@
             <a href="#about" class="btn btn-dark btn-lg">Descubre m&aacute;s</a>
         </div>
     </header>
-    <!-- Fin de Cabecera -->
 
-    <!-- Acerca de nosotros -->
+    <!-- About -->
     <section id="about" class="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Informaci&oacute;n oportuna para una mejor toma de decisiones</h2>
-                    <p class="lead">Revisa nuestra plataforma de prueba <a  href="mapas.php">Estaci&oacute;n CITRAR-UNI</a>.</p>
+                    <p class="lead">Revisa nuestra plataforma de prueba <a target="_blank" href="mapas.php">Estacion CITRAR-UNI</a>.</p>
                 </div>
             </div>
             <!-- /.row -->
         </div>
         <!-- /.container -->
     </section>
-    <!-- Fin de Acerca de nosotros -->
 
-    <!-- Servicios -->
+    <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <section id="services" class="services bg-primary">
         <div class="container">
@@ -117,24 +115,14 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- Fin de Servicios -->
 
-    <!-- Nuestro Sistema -->
+    <!-- Callout -->
     <aside class="callout">
         <div class="text-vertical-center">
-            <h1>Nuestro sistema autom&aacute;tico<br><small><a href="Waposat_detalleTecnico.pdf">Ver mas.</a></small></h1>
+            <h1>Nuestro sistema autom&aacute;tico<small><a target="_blank" href="#">Ver mas.</a></small></h1>
         </div>
     </aside>
-    <!-- Fin de Nuestro Sistema -->
-    
-    <!-- Nuestros Premios -->
-    <section id="Premios" class="bg-primary" >
-        <div class="text-vertical-center" >
-            <h1>Nuestro sistema autom&aacute;tico</h1>
-        </div>
-    </section>
-    <!-- Fin de Nuestros Premios -->
-    
+
     <!-- Mision y Vision -->
     <section id="about" class="about">
         <div class="container">
@@ -150,7 +138,6 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- Fin de Mision y Vision -->
     
     <!-- Acerca de Nosotros -->
     <section id="AcercaDe" class="about bg-primary">
@@ -158,19 +145,16 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Acerca de Nosotros</h2>
-                    <p class="lead">Waposat es una empresa que innova y desarrolla productos tecnol&oacute;gicos para el monitoreo del agua, mediante los productos y servicios que brindamos.<br> Tenemos como objetivo que todas las instituciones, empresas y personas accedan de manera sencilla al uso de la tecnolog&iacute;a para que puedan tener un mejor control y uso del agua en todas las actividades que realizan.</p>
+                    <p class="lead">Waposat es una empresa que innova y desarrolla productos tecnol&oacute;gicos para el monitoreo del agua, mediante los productos y servicios que brindamos.<br> Tenemos como objetivo de que todas las instituciones, empresas y personas puedan acceder, de manera sencilla, al uso de la tecnolog&iacute;a para que puedan tener un mejor control y uso del agua en todas las actividades que realizan.</p>
                 </div>
             </div>
             <!-- /.row -->
         </div>
         <!-- /.container -->
     </section>
-    <!-- Fin de Acerca de Nosotros -->
     
-    
-    <!-- Pie de pagina -->
+    <!-- Footer -->
     <?php include("footer.php") ?>
-    <!-- Fin Pie de pagina -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -179,9 +163,8 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-<!-- 
     <script>
-
+<!-- 
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
@@ -193,7 +176,7 @@
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
     });
-
+-->
     // Scrolls to the selected menu item on the page
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
@@ -210,9 +193,8 @@
             }
         });
     });
-
     </script>
--->
+
 </body>
 
 </html>
