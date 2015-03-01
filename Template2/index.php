@@ -154,6 +154,15 @@
                         <abbr title="Ciudad">C: </abbr><em>Asuncion - Paraguay</em>
                     </address>
                 </div>
+                <div class="col-md-12 text-left">
+                	<address>
+                    	<h3><strong>EcoEntrepreneur - 2013</strong></h3>
+                        <strong>Programa que brinda su apoyo a jovenes emprendedores en la implementacion y expansion de proyectos relacionados con el ambiente.</strong>     
+                        <kbd><small class="referencia"><a href="http://vimeo.com/72496462" target="_blank">Ver_mas.</a></small></kbd><br>
+                        <abbr title="Organizador">O: </abbr><em>OEA/ YABT/ PepsiCo</em><br>
+                        <abbr title="Ciudad">C: </abbr><em>Washington D.C. - EEUU</em>
+                    </address>
+                </div>
             </div>
         	<div class="col-md-4 col-xs-12"> 
             	<div class="col-md-12 text-left">
@@ -161,6 +170,14 @@
                     	<h3><strong>Emprendimientos Científicos y Tecnológicos - 2014</strong></h3>
                         <abbr title="Organizador">O: </abbr><em>Organizacion de Estados Iberoamericanos</em><br>
                         <abbr title="Ciudad">C: </abbr><em>Buenos Aires - Argentina</em>
+                    </address>
+                </div>
+                <div class="col-md-12 text-left">
+                	<address>
+                    	<h3><img src="img/yabt-logo-secundario.png" width="50px"><strong>Carta de Recomendacion YABT</strong></h3>
+                        <kbd><small class="referencia"><a href="Waposat_Cartadeapoyo.pdf" target="_blank">Ver_carta.</a></small></kbd><br>
+                        <abbr title="Organizador">O: </abbr><em>YABT/ OEA </em><br>
+                        <abbr title="Ciudad">C: </abbr><em>Washington D.C. - EEUU</em>
                     </address>
                 </div>
             </div>
