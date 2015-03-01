@@ -52,7 +52,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Informaci&oacute;n oportuna para una mejor toma de decisiones</h2>
-                    <p class="lead">Revisa nuestra plataforma de prueba <a  href="mapas.php">Estaci&oacute;n CITRAR-UNI</a>.</p>
+                    <p class="lead">Revisa nuestra plataforma de prueba <a href="mapas.php">Estaci&oacute;n CITRAR-UNI</a>.</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -128,9 +128,42 @@
     <!-- Fin de Nuestro Sistema -->
     
     <!-- Nuestros Premios -->
-    <section id="Premios" class="bg-primary" >
-        <div class="text-vertical-center" >
-            <h1>Nuestro sistema autom&aacute;tico</h1>
+    <section id="Premios" class="bg-primary premios" >
+        <div class="text-vertical-center col-md-12" >
+        	<br>
+            <h2>Nuestros Logros y Reconocimientos</h2>
+            <br>
+        </div>
+        <div class="text-vertical-center col-md-12">
+        	<div class="col-md-4 col-md-offset-2 col-xs-12"> 
+            	<div class="col-md-12 text-left">
+                	<address>
+                    	<h3><strong>Premio NESsT - 2014</strong></h3>
+                        <strong>Concurso dirigido a emprendimientos tecnologicos con impacto social</strong>     
+                        <kbd><small class="referencia"><a href="http://emprendeup.pe/concurso/concurso-de-emprendimientos-sociales-up/" target="_blank">Ver_mas.</a></small></kbd><br>
+                        <abbr title="Organizador">O: </abbr><em>Universidad Pacifico/ NESsT</em><br>
+                        <abbr title="Ciudad">C: </abbr><em>Lima - Peru</em>
+                    </address>
+                </div>
+                <div class="col-md-12 text-left">
+                	<address>
+                    	<h3><strong>TICAmericas - 2014</strong></h3>
+                        <strong>Finalistas en la categoria ECO-RETO, dirigido a jovenes emprendedores con proyectos  innovadores que ofrecen soluciones creativas a los problemas ambientales de nuestro hemisferio.</strong>     
+                        <kbd><small class="referencia"><a href="http://www.ticamericas.net/tic.php" target="_blank">Ver_mas.</a></small></kbd><br>
+                        <abbr title="Organizador">O: </abbr><em>OEA/ YABT/ PepsiCo</em><br>
+                        <abbr title="Ciudad">C: </abbr><em>Asuncion - Paraguay</em>
+                    </address>
+                </div>
+            </div>
+        	<div class="col-md-4 col-xs-12"> 
+            	<div class="col-md-12 text-left">
+                	<address>
+                    	<h3><strong>Emprendimientos Científicos y Tecnológicos - 2014</strong></h3>
+                        <abbr title="Organizador">O: </abbr><em>Organizacion de Estados Iberoamericanos</em><br>
+                        <abbr title="Ciudad">C: </abbr><em>Buenos Aires - Argentina</em>
+                    </address>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Fin de Nuestros Premios -->
